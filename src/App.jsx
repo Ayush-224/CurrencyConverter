@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
 import { InputBox } from './components'
+import swap from './assets/swap.png'
 
 function App() {
   const [amount, setAmount] = useState(0)
@@ -53,7 +54,7 @@ function App() {
                 className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-green-600 text-white px-2 py-0.5"
                 onClick={swap}
               >
-                <img src='./assets/swap.png' alt='arrow'></img>
+                <img src={swap} alt='arrow'></img>
               </button>
             </div>
             <div className="w-full mt-1 mb-4">
